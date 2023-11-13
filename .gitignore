@@ -48,3 +48,17 @@ Thumbs.db
 *.mov
 *.wmv
 
+
+# UE
+**/Intermediate/*
+**/Saved/*
+**/Build/*
+**/Binaries/*
+**/Android_ASTC/*
+**/WindowsEditor/*
+**/Windows/*
+**/DerivedDataCache/*
+
+# VS
+.vs/
+.vscode/
