@@ -1,29 +1,37 @@
-# README #
+# Сетап анимационного персонажа 
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Настройка анимационного персонажа для стрима захвата движения в AR пространтсво в реальном времени
+* Сетап AnimBP
+* [Плагин-генератор ControlRig'а для коррекции блендшейпов лица на основе конфига](https://github.com/DenDBL/ue-portfolio/tree/02ae4afc0b10cdcea95df0d304ffc81bf26ac945/Facial_ControlRig_Builder)
+* Сетап физ.ассета
+* * Настройка костной физики ткани для примитивных движений
+* * Настройка физики ушей в двух вариантах (Phys. Asset и AnimBP)
 
-### What is this repository for? ###
+# Тестовое задание на взаимодействие персонажа с объектами окружения
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+https://github.com/DenDBL/ue-portfolio/tree/02ae4afc0b10cdcea95df0d304ffc81bf26ac945/Nomix_TT
 
-### How do I get set up? ###
+* Реализация механики инвентаря
+* Реализация механики взаимодействия с объектами(рычаг,вращение клапана, подбор предметов)
+* Система турникетов (валидация, открытие/закрытие)
+* Написан на C++
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+# Механика перемещения в пошаговой стратегии
 
-### Contribution guidelines ###
+https://github.com/DenDBL/ue-portfolio/tree/02ae4afc0b10cdcea95df0d304ffc81bf26ac945/TBS_Project
 
-* Writing tests
-* Code review
-* Other guidelines
+* Генерация сетки
+* Поиск пути A*
+* Механика "телепортов" между сетками
+* Написан на BP
 
-### Who do I talk to? ###
+# Генерация сетки для пошаговой стратегии на C++
 
-* Repo owner or admin
-* Other community or team contact
+https://github.com/DenDBL/ue-portfolio/tree/02ae4afc0b10cdcea95df0d304ffc81bf26ac945/TBS_CPP_Source
+
+* Ассинхронный поиск пути
+* Алгоритм поиска пути Дейкстры
+* Изменение состояни в зависимости от выставленного на клетки объекта
+* Динамические преграды
+
+
