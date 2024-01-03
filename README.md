@@ -30,7 +30,7 @@ https://github.com/DenDBL/ue-portfolio/tree/02ae4afc0b10cdcea95df0d304ffc81bf26a
 https://github.com/DenDBL/ue-portfolio/tree/02ae4afc0b10cdcea95df0d304ffc81bf26ac945/TBS_CPP_Source
 
 * Ассинхронный поиск пути
-* Алгоритм поиска пути Дейкстры
+* Алгоритм поиска пути в ширину
 * Изменение состояни в зависимости от выставленного на клетки объекта
 * Динамические преграды
 
