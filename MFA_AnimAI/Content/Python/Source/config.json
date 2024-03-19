@@ -1,0 +1,13 @@
+{
+  "CONN": {
+    "ADDRESS": "http://192.168.33.150",
+    "MAIN_PORT": 80,
+    "FBX_PORT": 8181
+  },
+  "RETARGETER": {
+    "DEFAULT_SOURCE_POSE_NAME": "A-Pose",
+    "SOURCE_IK_RIG": "/MFA_AnimAI/SkmSetup/IKR_AI_skm.IKR_AI_skm",
+    "IK_RETARGETER": "/MFA_AnimAI/SkmSetup/RTG_AI_skm.RTG_AI_skm",
+    "SOURCE_SKELETON": "/MFA_AnimAI/SkmSetup/AI_skm_Skeleton.AI_skm_Skeleton"
+  }
+}
