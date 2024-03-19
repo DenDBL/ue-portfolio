@@ -45,4 +45,70 @@ https://github.com/DenDBL/ue-portfolio/tree/02ae4afc0b10cdcea95df0d304ffc81bf26a
 * Изменение состояни в зависимости от выставленного на клетки объекта
 * Динамические преграды
 
+```cpp
+TArray<FIntPoint> Acpp_PathFinding::FindPath(const FIntPoint& Start, const FIntPoint& End, const TMap<FIntPoint, bool>& Map)
+{
+    TArray<FIntPoint> Path;
+    TMap<FIntPoint, int32> GScore;  
+    TMap<FIntPoint, int32> FScore;  
+    TMap<FIntPoint, FIntPoint> CameFrom;  
+    TArray<FIntPoint> OpenSet;  
+
+    GScore.Add(Start, 0);  
+    FScore.Add(Start, (End - Start).Size());  
+    OpenSet.Add(Start);  
+
+    while (OpenSet.Num() > 0)
+    {
+        
+        int32 MinIndex = 0;
+        for (int32 i = 0; i < OpenSet.Num(); i++)
+        {
+            if (FScore.FindRef(OpenSet[i]) < FScore.FindRef(OpenSet[MinIndex]))
+            {
+                MinIndex = i;
+            }
+        }
+        FIntPoint Current = OpenSet[MinIndex];
+
+        
+        if (Current == End)
+        {
+            Path.Add(Current);
+            while (CameFrom.Contains(Current))
+            {
+                Current = CameFrom[Current];
+                Path.Add(Current);
+            }
+            Algo::Reverse(Path);
+            //Path.Reverse();  
+            return Path;
+        }
+
+        OpenSet.RemoveAt(MinIndex);  
+
+        TArray<FIntPoint> Neighbors;
+        GetNeighbors(Current, Map, Neighbors);  
+        for (const FIntPoint& Neighbor : Neighbors)
+        {
+            const int32 TentativeGScore = GScore.FindRef(Current) + 1;  
+
+            if (!GScore.Contains(Neighbor) || TentativeGScore < GScore.FindRef(Neighbor))
+            {
+                CameFrom.Add(Neighbor, Current);  
+                GScore.Add(Neighbor, TentativeGScore);  
+                FScore.Add(Neighbor, TentativeGScore + (End - Neighbor).Size());  
+
+                if (!OpenSet.Contains(Neighbor))
+                {
+                    OpenSet.Add(Neighbor);  
+                }
+            }
+        }
+    }
+
+    return Path;  
+}
+```
+
 
