@@ -7,7 +7,7 @@ https://github.com/DenDBL/ue-portfolio/tree/029646378f67a3f46a248162936bd293e31a
 * Сетап IK Rig'ов 
 * Авторетаргет анимаций от ИИ и их применение на персонажей 
 
-Python-код расположен в Content-директории
+**Python-код расположен в Content-директории**
 ```cpp
 void FMFA_AnimAIModule::PluginButtonClicked()
 {
