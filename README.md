@@ -142,6 +142,8 @@ https://github.com/DenDBL/ue-portfolio/tree/02ae4afc0b10cdcea95df0d304ffc81bf26a
 * Изменение состояни в зависимости от выставленного на клетки объекта
 * Динамические преграды
 
+https://youtu.be/CglKwVdOMgs?si=G27rPcdmO0_ulQ0y
+
 ```cpp
 TArray<FIntPoint> Acpp_PathFinding::FindPath(const FIntPoint& Start, const FIntPoint& End, const TMap<FIntPoint, bool>& Map)
 {
