@@ -1,5 +1,7 @@
 # Плагин для генерации анимаций  
 
+https://github.com/DenDBL/ue-portfolio/tree/029646378f67a3f46a248162936bd293e31ae365/MFA_AnimAI
+
 Интерфейс для запросов на сервер с исскуственным интелектом для генерации анимаций для персонажей
 * Создание интерфейса на PyQt
 * Сетап IK Rig'ов 
@@ -14,7 +16,7 @@
 * * Настройка костной физики ткани для примитивных движений
 * * Настройка физики ушей в двух вариантах (Phys. Asset и AnimBP) и её параметризация
 
-![Ears Setup](https://github.com/DenDBL/ue-portfolio/blob/master/res/ears_setup_web.gif?raw=true)
+![Ears Setup](https://github.com/DenDBL/ue-portfolio/raw/master/res/ears_setup_web.mp4)
 
 # Тестовое задание на взаимодействие персонажа с объектами окружения
 
