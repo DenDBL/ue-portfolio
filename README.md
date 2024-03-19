@@ -131,6 +131,8 @@ https://github.com/DenDBL/ue-portfolio/tree/02ae4afc0b10cdcea95df0d304ffc81bf26a
 * Механика "телепортов" между сетками
 * Написан на BP
 
+https://youtu.be/lA6sjCvlY0g?si=Y3QrVVCgtQtF-GcZ
+
 # Генерация сетки для пошаговой стратегии на C++
 
 https://github.com/DenDBL/ue-portfolio/tree/02ae4afc0b10cdcea95df0d304ffc81bf26ac945/TBS_CPP_Source
