@@ -7,6 +7,20 @@ https://github.com/DenDBL/ue-portfolio/tree/029646378f67a3f46a248162936bd293e31a
 * Сетап IK Rig'ов 
 * Авторетаргет анимаций от ИИ и их применение на персонажей 
 
+Python-код расположен в Content-директории
+```cpp
+void FMFA_AnimAIModule::PluginButtonClicked()
+{
+	FPythonCommandEx Cmd;
+
+	auto PluginPath = IPluginManager::Get().FindPlugin("MFA_AnimAI")->GetBaseDir();
+	Cmd.Command = PluginPath / "Content/Python/Source/main.py";
+	Cmd.ExecutionMode = EPythonCommandExecutionMode::ExecuteFile;
+	IPythonScriptPlugin::Get()->ExecPythonCommandEx(Cmd);
+}
+
+```
+
 # Сетап анимационного персонажа 
 
 Настройка анимационного персонажа для стрима захвата движения в AR пространтсво в реальном времени
