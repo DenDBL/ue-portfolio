@@ -16,7 +16,10 @@ https://github.com/DenDBL/ue-portfolio/tree/029646378f67a3f46a248162936bd293e31a
 * * Настройка костной физики ткани для примитивных движений
 * * Настройка физики ушей в двух вариантах (Phys. Asset и AnimBP) и её параметризация
 
-![Ears Setup](https://github.com/DenDBL/ue-portfolio/raw/master/res/ears_setup_web.mp4)
+
+
+Uploading ears_setup_web_1.mp4…
+
 
 # Тестовое задание на взаимодействие персонажа с объектами окружения
 
