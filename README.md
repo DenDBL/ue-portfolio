@@ -7,6 +7,8 @@
 * * Настройка костной физики ткани для примитивных движений
 * * Настройка физики ушей в двух вариантах (Phys. Asset и AnimBP) и её параметризация
 
+![Ears Setup](https://github.com/DenDBL/ue-portfolio/blob/master/res/ears_setup_web.gif?raw=true)
+
 # Тестовое задание на взаимодействие персонажа с объектами окружения
 
 https://github.com/DenDBL/ue-portfolio/tree/02ae4afc0b10cdcea95df0d304ffc81bf26ac945/Nomix_TT
